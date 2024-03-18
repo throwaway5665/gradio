@@ -668,7 +668,7 @@ export function api_factory(
 								}${params}`
 							);
 
-							eventSource = EventSource_factory(url);
+							eventSource = EventSource_factory(url.toString());
 
 							eventSource.onmessage = async function (event) {
 								const _data = JSON.parse(event.data);
@@ -1038,7 +1038,7 @@ export function api_factory(
 					session_hash: session_hash
 				}).toString();
 				let url = new URL(`${config.root}/queue/data?${params}`);
-				event_stream = EventSource_factory(url);
+				event_stream = EventSource_factory(url.toString());
 				event_stream.onmessage = async function (event) {
 					let _data = JSON.parse(event.data);
 					const event_id = _data.event_id;
