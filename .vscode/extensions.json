@@ -1,9 +1,0 @@
-{
-	"recommendations": [
-		"dbaeumer.vscode-eslint",
-		"phoenisx.cssvar",
-		"esbenp.prettier-vscode",
-		"svelte.svelte-vscode",
-		"charliermarsh.ruff"
-	]
-}
